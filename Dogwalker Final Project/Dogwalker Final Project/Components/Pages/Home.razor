@@ -1,0 +1,48 @@
+﻿@page "/"
+
+<div class="hero-content" style="background-image: url('/images/cover-photo.jpg'); background-size: cover; background-position: center;">
+    <h1>יוצרים חיבור לכלבים שלכם</h1>
+    <p>הפלטפורמה המהימנה לחבר בין בעלי כלבים והולכים.</p>
+    <button class="cta-button">צפה בשירותים</button>
+</div>
+
+<style>
+    .hero-content {
+        height: calc(100vh - 100px); /* Adjust for header height */
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+        padding: 0 2rem;
+        color: #EFD9C1;
+    }
+
+        .hero-content h1 {
+            font-size: 3rem;
+            font-weight: 600;
+            margin-bottom: 1rem;
+            color: #EFD9C1;
+        }
+
+        .hero-content p {
+            font-size: 1.25rem;
+            margin-bottom: 2rem;
+            color: #EFD9C1;
+        }
+
+    .cta-button {
+        background-color: #8C5C4F;
+        color: #FFFFFF;
+        padding: 0.75rem 1.5rem;
+        border: none;
+        border-radius: 25px;
+        font-size: 1rem;
+        cursor: pointer;
+        transition: all 0.3s ease;
+    }
+
+        .cta-button:hover {
+            background-color: #9E7A6A;
+        }
+</style>

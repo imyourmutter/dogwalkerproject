@@ -1,0 +1,113 @@
+﻿@using System.Net.Http
+@using Microsoft.AspNetCore.Authorization
+@using Microsoft.AspNetCore.Components
+@using Microsoft.AspNetCore.Components.Authorization
+@using Microsoft.AspNetCore.Components.Forms
+@using Microsoft.AspNetCore.Components.Routing
+@using Microsoft.AspNetCore.Components.Web
+@using Microsoft.AspNetCore.Components.Web.Virtualization
+@using Microsoft.JSInterop
+
+@inherits LayoutComponentBase
+
+<div class="main-layout">
+    <header>
+        <nav class="nav-bar">
+            <a href="/" class="logo">🐾 הולכים עם כלבים</a>
+
+            <ul class="nav-links">
+                <li><a href="/">דף הבית</a></li>
+                <li><a href="/find-services">מצא שירותים</a></li>
+                <li><a href="/find-dogowners">חפש בעלי כלבים</a></li>
+                <li><a href="/profile">פרופיל</a></li>
+                <li><a href="/contact">צור קשר</a></li>
+                <li><a href="/reviews">דירוגים וחווות דעת</a></li>
+                <li><a href="/admin">ניהול מערכת</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main class="content">
+        @Body
+    </main>
+
+    <footer class="footer">
+        <p>© 2024 הולכים עם כלבים. כל הזכויות שמורות. 🐾</p>
+    </footer>
+</div>
+
+<style>
+    body {
+        margin: 0;
+        font-family: 'Roboto', sans-serif;
+        background: linear-gradient(to bottom, #2B1D1B, #3C2F2F);
+        color: #EFD9C1;
+        direction: rtl; 
+        text-align:right;
+    }
+
+    .main-layout {
+        display: flex;
+        flex-direction: column;
+        height: 100vh;
+        justify-content: space-between;
+    }
+
+    .nav-bar {
+        background: rgba(60, 47, 47, 0.95);
+        backdrop-filter: blur(10px);
+        padding: 1rem 2rem;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+    }
+
+    .logo {
+        font-size: 1.8rem;
+        font-weight: bold;
+        color: #EFD9C1;
+        text-decoration: none;
+    }
+
+    .nav-links {
+        list-style: none;
+        display: flex;
+        gap: 2rem;
+    }
+
+        .nav-links li {
+            transition: transform 0.2s;
+        }
+
+            .nav-links li:hover {
+                transform: scale(1.1);
+            }
+
+        .nav-links a {
+            color: #EFD9C1;
+            text-decoration: none;
+            font-weight: 500;
+        }
+
+    .content {
+        flex: 1;
+        padding: 2rem;
+        justify-content: center;
+        align-items: center;
+        background-color: #2B1D1B; /* Fallback color */
+        background-image: radial-gradient(circle, rgba(255, 255, 255, 0.05) 3px, transparent 2px);
+        background-size: 20px 20px; /* Adjust the spacing */
+        background-position: center;
+    }
+
+
+    .footer {
+        background-color: #3C2F2F;
+        text-align: center;
+        padding: 1rem;
+        font-size: 0.9rem;
+        color: #D8C3A5;
+        box-shadow: 0px -2px 5px rgba(0, 0, 0, 0.1);
+    }
+</style>

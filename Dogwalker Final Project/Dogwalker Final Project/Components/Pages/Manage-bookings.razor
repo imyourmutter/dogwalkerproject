@@ -1,0 +1,24 @@
+﻿@page "/manage-bookings"
+
+<h1>ניהול הזמנות</h1>
+<div class="booking-grid">
+    <div class="booking-card">
+        <h3>הזמנה #1234</h3>
+        <p>תאריך: 01/01/2024</p>
+        <p>שעה: 10:00 - 11:00</p>
+        <p>סטטוס: מאושרת</p>
+    </div>
+</div>
+
+<style>
+    .booking-grid {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+        gap: 1rem;
+    }
+    .booking-card {
+        background-color: #4E342E;
+        padding: 1rem;
+        border-radius: 8px;
+    }
+</style>

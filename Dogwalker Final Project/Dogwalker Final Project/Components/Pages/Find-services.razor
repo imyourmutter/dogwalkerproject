@@ -1,0 +1,63 @@
+﻿@page "/find-services"
+
+<h1>מצא שירותים</h1>
+<p>חפש הולכי כלבים, ספרי כלבים, או וטרינרים באזור שלך.</p>
+
+<div class="service-grid">
+    <div class="service-card">
+        <img src="walker-placeholder.jpg" alt="תמונת הולך" />
+        <h2>ג'ון דו</h2>
+        <p>סוג שירות: הולך כלבים</p>
+        <button class="cta">הזמן עכשיו</button>
+    </div>
+    <div class="service-card">
+        <img src="vet-placeholder.jpg" alt="תמונת וטרינר" />
+        <h2>ד"ר ליסה כהן</h2>
+        <p>סוג שירות: וטרינר</p>
+        <button class="cta">צור קשר</button>
+    </div>
+    <div class="service-card">
+        <img src="haircut-placeholder.jpg" alt="תמונת ספר" />
+        <h2>מייקל לוי</h2>
+        <p>סוג שירות: ספר כלבים</p>
+        <button class="cta">הזמן עכשיו</button>
+    </div>
+</div>
+
+<style>
+    .service-grid {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+        gap: 1.5rem;
+        margin-top: 2rem;
+    }
+
+    .service-card {
+        background-color: #4E342E;
+        color: #D8C3A5;
+        padding: 1rem;
+        border-radius: 12px;
+        text-align: center;
+        box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    }
+
+    .service-card img {
+        max-width: 100%;
+        border-radius: 50%;
+        margin-bottom: 1rem;
+    }
+
+    .cta {
+        background-color: #8C5C4F;
+        color: #FFFFFF;
+        padding: 0.75rem 1.5rem;
+        border: none;
+        border-radius: 5px;
+        cursor: pointer;
+        transition: all 0.3s ease;
+    }
+
+    .cta:hover {
+        background-color: #9E7A6A;
+    }
+</style>

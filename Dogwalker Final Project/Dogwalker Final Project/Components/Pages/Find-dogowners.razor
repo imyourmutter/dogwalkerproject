@@ -1,0 +1,23 @@
+﻿@page "/find-dogowners"
+
+<h1>מצא בעלי כלבים</h1>
+<div class="owner-grid">
+    <div class="owner-card">
+        <h3>ישראל ישראלי</h3>
+        <p>כתובת: תל אביב</p>
+        <p>מספר כלבים: 2</p>
+    </div>
+</div>
+
+<style>
+    .owner-grid {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+        gap: 1rem;
+    }
+    .owner-card {
+        background-color: #4E342E;
+        padding: 1rem;
+        border-radius: 8px;
+    }
+</style>

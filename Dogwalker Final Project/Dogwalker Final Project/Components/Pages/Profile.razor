@@ -1,0 +1,93 @@
+﻿@page "/profile"
+
+<h1>הפרופיל שלי</h1>
+<div class="user-profile">
+    <img src="\images\user-placeholder.jpg" alt="תמונת משתמש" class="profile-picture" />
+    <div>
+        <h2>פרטי משתמש</h2>
+        <p>שם מלא: ג'ו גולדברג</p>
+        <p>אימייל: jo@gmail.com</p>
+        <p>מספר טלפון: 123-456-789</p>
+    </div>
+</div>
+
+<div class="dog-profile">
+    <h2>הכלבים שלי</h2>
+    <div class="dog-grid">
+        <div class="dog-card">
+            <img src="\images\dog-placeholder.jpg" alt="תמונת כלב" class="profile-picture" />
+            <div>
+                <h3>לוסי</h3>
+                <p>גזע: לברדור</p>
+                <p>משקל: 25 ק"ג</p>
+                <p>רגישויות: אין</p>
+                <p>צרכים מיוחדים: אין</p>
+            </div>
+        </div>
+        <div class="dog-card">
+            <img src="\images\dog-placeholder2.jpg" alt="תמונת כלב" class="profile-picture" />
+            <div>
+                <h3>רקסי</h3>
+                <p>גזע: בוקסר</p>
+                <p>משקל: 30 ק"ג</p>
+                <p>רגישויות: עוף</p>
+                <p>צרכים מיוחדים: אין</p>
+            </div>
+        </div>
+        <!-- Add more dog cards as needed -->
+    </div>
+</div>
+
+<style>
+    h1 {
+        margin: auto;
+        display:flex;
+        position:center;
+    }
+    .user-profile {
+        background-color: #3C2F2F;
+        padding: 1rem;
+        border: 1px solid #D8C3A5;
+        border-radius: 12px;
+        width: 300px;
+        text-align: right;
+        box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+        display: flex;
+        align-items: center;
+        gap: 1rem;
+        margin-top: 1.5rem;
+        margin: auto;
+    }
+
+    .profile-picture {
+        width: 50px;
+        height: 50px;
+        border-radius: 50%;
+        object-fit: cover;
+    }
+
+    .dog-profile {
+        text-align: center;
+    }
+
+    .dog-grid {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 1.5rem;
+        margin-top: 1.5rem;
+    }
+
+    .dog-card {
+        background-color: #4E342E;
+        padding: 1rem;
+        border: 1px solid #D8C3A5;
+        border-radius: 12px;
+        width: 250px;
+        text-align: right;
+        box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+        display: flex;
+        align-items: center;
+        gap: 1rem;
+    }
+</style>
